@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "TEAMID.com.locvani.app"
+        ],
+        "components": [
+          {
+            "/": "/church/*",
+            "comment": "church share links"
+          }
+        ]
+      }
+    ]
+  }
+}
