@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html lang="ka"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ლოცვანი</title>
-<meta property="og:title" content="ლოცვანი">
-<meta property="og:description" content="ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია.">
-<meta property="og:image" content="https://teopile.github.io/img/default-og.jpg">
-<style>body{margin:0;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  font-family:-apple-system,system-ui,sans-serif;background:#F6F7F9;color:#2A2E36}
-  h1{font-size:34px;margin:.2em 0}a{color:#A87420}</style></head>
-<body><div style="font-size:60px;color:#E0A93E">✟</div><h1>ლოცვანი</h1>
-<p>ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია</p>
-<p><a href="https://apps.apple.com/app/id000000000">App Store</a></p></body></html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ლოცვანი — ქართული მართლმადიდებლური ლოცვანი</title>
+<meta name="description" content="ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას. სრულად ოფლაინ, თრექინგის გარეშე.">
+<meta name="theme-color" content="#F6F7F9">
+<link rel="icon" href="/img/icon.png">
+<link rel="preload" as="font" type="font/ttf" href="/fonts/NotoSerifGeorgian-Regular.ttf" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ლოცვანი">
+<meta property="og:locale" content="ka_GE">
+<meta property="og:title" content="ლოცვანი — ქართული მართლმადიდებლური ლოცვანი">
+<meta property="og:description" content="ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას. სრულად ოფლაინ, თრექინგის გარეშე.">
+<meta property="og:image" content="https://teopile.github.io/img/og-default.jpg">
+<meta property="og:url" content="https://teopile.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ლოცვანი — ქართული მართლმადიდებლური ლოცვანი">
+<meta name="twitter:description" content="ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას. სრულად ოფლაინ, თრექინგის გარეშე.">
+<meta name="twitter:image" content="https://teopile.github.io/img/og-default.jpg">
+<link rel="canonical" href="https://teopile.github.io/">
+<style>
+:root{
+  --bg:#F6F7F9;--surface:#FFFFFF;--surface2:#EFF1F4;
+  --ink:#2A2E36;--muted:#6B7079;--line:#DDE0E4;
+  --gold:#E0A93E;--gold-ink:#A87420;--gold-deep:#7E5618;--gold-wash:#F7EEDA;
+  --red:#B53C2D;
+}
+@font-face{font-family:"Locvani Serif";src:url("/fonts/NotoSerifGeorgian-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Locvani Serif";src:url("/fonts/NotoSerifGeorgian-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Georgian",sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.serif{font-family:"Locvani Serif",Georgia,serif}
+a{color:var(--gold-ink);text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.mark{display:inline-flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.3px}
+.mark .cross{color:var(--gold);font-size:1.05em;line-height:1}
+header.site{padding:20px 0}
+header.site .mark{font-size:19px}
+footer.site{border-top:1px solid var(--line);margin-top:56px;padding:26px 0 40px;color:var(--muted);font-size:13px}
+footer.site nav{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px}
+footer.site a{color:var(--muted)}
+.doc h1{font-family:"Locvani Serif",Georgia,serif;font-size:30px;line-height:1.2;margin:8px 0 18px}
+.doc h2{font-family:"Locvani Serif",Georgia,serif;font-size:21px;margin:28px 0 8px}
+.doc h3{font-size:16px;margin:20px 0 6px;color:var(--gold-deep)}
+.doc p,.doc li{font-size:15.5px;color:#3a3f48}
+.doc ul{margin:8px 0 8px 18px}
+.doc{padding-bottom:8px}
+</style>
+</head>
+<body>
+
+<header class="site"><div class="wrap"><a class="mark serif" href="/"><span class="cross">✟</span> ლოცვანი</a></div></header>
+<main class="wrap">
+  <style>
+  .hero{padding:30px 0 6px;text-align:center}
+  .hero .icon{width:84px;height:84px;border-radius:20px;margin:0 auto 18px;box-shadow:0 8px 30px rgba(126,86,24,.18);border:1px solid var(--line)}
+  .hero h1{font-family:"Locvani Serif",Georgia,serif;font-size:40px;line-height:1.1;letter-spacing:.3px;margin-bottom:12px}
+  .hero p.lede{font-size:18px;color:#3a3f48;max-width:30ch;margin:0 auto 22px}
+  .feat{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 auto 26px;max-width:520px}
+  .feat span{font-size:13.5px;color:var(--gold-deep);background:var(--gold-wash);border:1px solid #ECDCB5;border-radius:999px;padding:5px 12px}
+  .soon{display:inline-block;font-size:14px;font-weight:600;color:var(--gold-deep);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:10px 18px}
+  .stores{display:flex;gap:10px;justify-content:center}
+  .stores .badge{background:var(--ink);color:#fff;border-radius:12px;padding:12px 18px;font-weight:600}
+  .strip{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:40px 0 8px}
+  .strip figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+  .strip img{width:100%;height:auto;aspect-ratio:32/22;object-fit:cover}
+  .strip figcaption{font-size:12.5px;color:var(--muted);padding:8px 12px}
+  .note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
+  @media(min-width:560px){.strip{grid-template-columns:repeat(4,1fr)}}
+  </style>
+  <section class="hero">
+    <img class="icon" src="/img/icon.png" width="84" height="84" alt="ლოცვანის ხატულა">
+    <h1>ლოცვანი</h1>
+    <p class="lede">ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას.</p>
+    <div class="feat">
+      <span>ლოცვები</span><span>საეკლესიო კალენდარი</span><span>სრული ბიბლია</span>
+      <span>წმინდანები</span><span>ტაძრები რუკაზე</span>
+    </div>
+    <div class="soon" role="note">მალე — App Store-სა და Google Play-ზე</div>
+  </section>
+
+  <section class="strip" aria-label="ტაძრები აპლიკაციიდან">
+    
+      <figure>
+        <img src="/img/sameba.jpg" width="320" height="220" alt="სამების საკათედრო ტაძარი" decoding="async">
+        <figcaption>სამების საკათედრო ტაძარი</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/svetitskhoveli.jpg" width="320" height="220" alt="სვეტიცხოველი" decoding="async">
+        <figcaption>სვეტიცხოველი</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/jvari.jpg" width="320" height="220" alt="ჯვრის მონასტერი" loading="lazy" decoding="async">
+        <figcaption>ჯვრის მონასტერი</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/gelati.jpg" width="320" height="220" alt="გელათის მონასტერი" loading="lazy" decoding="async">
+        <figcaption>გელათის მონასტერი</figcaption>
+      </figure>
+  </section>
+  <p class="note">ფოტოები: Wikimedia Commons — CC ლიცენზიით, ავტორების მითითებით.</p>
+</main>
+<footer class="site"><div class="wrap">
+  <nav>
+    <a href="/privacy">კონფიდენციალურობა</a>
+    <a href="/terms">წესები</a>
+    <a href="/support">დახმარება</a>
+  </nav>
+  <div>ლოცვანი — ქართული მართლმადიდებლური ლოცვანი. სრულად ოფლაინ. თრექინგის გარეშე.</div>
+</div></footer>
+</body>
+</html>
