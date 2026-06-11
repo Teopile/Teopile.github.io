@@ -13,13 +13,15 @@
 <meta property="og:locale" content="ka_GE">
 <meta property="og:title" content="ლოცვანი — ქართული მართლმადიდებლური ლოცვანი">
 <meta property="og:description" content="ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას. სრულად ოფლაინ, თრექინგის გარეშე.">
-<meta property="og:image" content="https://teopile.github.io/img/og-default.jpg">
-<meta property="og:url" content="https://teopile.github.io/">
+<meta property="og:image" content="https://locvani.ge/img/og-default.jpg">
+<meta property="og:image:alt" content="ლოცვანი — ქართული მართლმადიდებლური ლოცვანი">
+<meta property="og:url" content="https://locvani.ge/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ლოცვანი — ქართული მართლმადიდებლური ლოცვანი">
 <meta name="twitter:description" content="ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას. სრულად ოფლაინ, თრექინგის გარეშე.">
-<meta name="twitter:image" content="https://teopile.github.io/img/og-default.jpg">
-<link rel="canonical" href="https://teopile.github.io/">
+<meta name="twitter:image" content="https://locvani.ge/img/og-default.jpg">
+<link rel="canonical" href="https://locvani.ge/">
+
 <style>
 :root{
   --bg:#F6F7F9;--surface:#FFFFFF;--surface2:#EFF1F4;
@@ -30,27 +32,32 @@
 @font-face{font-family:"Locvani Serif";src:url("/fonts/NotoSerifGeorgian-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
 @font-face{font-family:"Locvani Serif";src:url("/fonts/NotoSerifGeorgian-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
 *{box-sizing:border-box;margin:0}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);
   font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Georgian",sans-serif;
   line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .serif{font-family:"Locvani Serif",Georgia,serif}
 a{color:var(--gold-ink);text-decoration:none}
 img{display:block;max-width:100%}
-.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.wrap{max-width:840px;margin:0 auto;padding:0 22px}
 .mark{display:inline-flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.3px}
 .mark .cross{color:var(--gold);font-size:1.05em;line-height:1}
-header.site{padding:20px 0}
-header.site .mark{font-size:19px}
-footer.site{border-top:1px solid var(--line);margin-top:56px;padding:26px 0 40px;color:var(--muted);font-size:13px}
-footer.site nav{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px}
+header.site{padding:22px 0}
+header.site .mark{font-size:19px;color:var(--ink)}
+/* gilded cross divider */
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:40px 0 34px;color:var(--gold)}
+.divider::before,.divider::after{content:"";height:1px;width:72px;background:linear-gradient(90deg,transparent,var(--line))}
+.divider::after{background:linear-gradient(90deg,var(--line),transparent)}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 46px;color:var(--muted);font-size:13px;text-align:center}
+footer.site nav{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin-bottom:14px}
 footer.site a{color:var(--muted)}
-.doc h1{font-family:"Locvani Serif",Georgia,serif;font-size:30px;line-height:1.2;margin:8px 0 18px}
+footer.site .glory{color:var(--gold-deep);font-size:13px;margin-top:10px}
+.doc h1{font-size:30px;line-height:1.2;margin:8px 0 18px}
 .doc h2{font-family:"Locvani Serif",Georgia,serif;font-size:21px;margin:28px 0 8px}
 .doc h3{font-size:16px;margin:20px 0 6px;color:var(--gold-deep)}
 .doc p,.doc li{font-size:15.5px;color:#3a3f48}
 .doc ul{margin:8px 0 8px 18px}
-.doc{padding-bottom:8px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -58,61 +65,104 @@ footer.site a{color:var(--muted)}
 <header class="site"><div class="wrap"><a class="mark serif" href="/"><span class="cross">✟</span> ლოცვანი</a></div></header>
 <main class="wrap">
   <style>
-  .hero{padding:30px 0 6px;text-align:center}
-  .hero .icon{width:84px;height:84px;border-radius:20px;margin:0 auto 18px;box-shadow:0 8px 30px rgba(126,86,24,.18);border:1px solid var(--line)}
-  .hero h1{font-family:"Locvani Serif",Georgia,serif;font-size:40px;line-height:1.1;letter-spacing:.3px;margin-bottom:12px}
-  .hero p.lede{font-size:18px;color:#3a3f48;max-width:30ch;margin:0 auto 22px}
-  .feat{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 auto 26px;max-width:520px}
-  .feat span{font-size:13.5px;color:var(--gold-deep);background:var(--gold-wash);border:1px solid #ECDCB5;border-radius:999px;padding:5px 12px}
-  .soon{display:inline-block;font-size:14px;font-weight:600;color:var(--gold-deep);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:10px 18px}
+  .hero{position:relative;text-align:center;padding:34px 0 8px}
+  .hero::before{content:"";position:absolute;inset:-60px 0 auto;height:340px;z-index:-1;
+    background:radial-gradient(70% 100% at 50% 0,var(--gold-wash) 0,rgba(247,238,218,0) 70%)}
+  .hero .icon{width:92px;height:92px;border-radius:22px;margin:0 auto 20px;
+    box-shadow:0 10px 34px rgba(126,86,24,.22);border:1px solid #ECDCB5}
+  .hero h1{font-size:46px;line-height:1.05;letter-spacing:.4px;margin-bottom:14px}
+  .hero .lede{font-size:18.5px;color:#3a3f48;max-width:30ch;margin:0 auto 24px}
   .stores{display:flex;gap:10px;justify-content:center}
   .stores .badge{background:var(--ink);color:#fff;border-radius:12px;padding:12px 18px;font-weight:600}
-  .strip{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:40px 0 8px}
-  .strip figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
-  .strip img{width:100%;height:auto;aspect-ratio:32/22;object-fit:cover}
-  .strip figcaption{font-size:12.5px;color:var(--muted);padding:8px 12px}
-  .note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
-  @media(min-width:560px){.strip{grid-template-columns:repeat(4,1fr)}}
+  .soon{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--gold-deep);
+    background:var(--surface);border:1px solid #ECDCB5;border-radius:999px;padding:11px 20px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .soon .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--gold-wash)}
+  .features{display:grid;grid-template-columns:1fr;gap:12px;margin:6px 0}
+  .f{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);
+    border-radius:16px;padding:16px 18px}
+  .fg{font-size:22px;width:44px;height:44px;flex:0 0 44px;display:flex;align-items:center;justify-content:center;
+    background:var(--gold-wash);border-radius:12px;color:var(--gold-deep)}
+  .ft{font-size:16px;font-weight:700;margin-bottom:2px}
+  .fd{font-size:13.5px;color:var(--muted)}
+  .sect-h{text-align:center;font-size:13px;letter-spacing:2px;color:var(--gold-deep);margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .ch{position:relative;display:block;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+    aspect-ratio:36/26;background:var(--gold-wash);transition:transform .2s ease,box-shadow .2s ease}
+  .ch img{width:100%;height:100%;object-fit:cover}
+  .ch .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 16px 12px;color:#fff;font-size:15px;font-weight:700;
+    background:linear-gradient(0deg,rgba(20,16,8,.82),rgba(20,16,8,0))}
+  .ch:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,20,20,.14)}
+  .note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:16px}
+  @media(min-width:600px){
+    .features{grid-template-columns:1fr 1fr}
+    .grid{grid-template-columns:repeat(3,1fr)}
+  }
   </style>
   <section class="hero">
-    <img class="icon" src="/img/icon.png" width="84" height="84" alt="ლოცვანის ხატულა">
-    <h1>ლოცვანი</h1>
+    <img class="icon" src="/img/icon.png" width="92" height="92" alt="ლოცვანის ხატულა">
+    <h1 class="serif">ლოცვანი</h1>
     <p class="lede">ქართული მართლმადიდებლური ლოცვანი, კალენდარი და ბიბლია — ერთ მშვიდ ადგილას.</p>
-    <div class="feat">
-      <span>ლოცვები</span><span>საეკლესიო კალენდარი</span><span>სრული ბიბლია</span>
-      <span>წმინდანები</span><span>ტაძრები რუკაზე</span>
-    </div>
-    <div class="soon" role="note">მალე — App Store-სა და Google Play-ზე</div>
+    <div class="soon" role="note"><span class="dot"></span> მალე — App Store-სა და Google Play-ზე</div>
   </section>
 
-  <section class="strip" aria-label="ტაძრები აპლიკაციიდან">
-    
-      <figure>
-        <img src="/img/sameba.jpg" width="320" height="220" alt="სამების საკათედრო ტაძარი" decoding="async">
-        <figcaption>სამების საკათედრო ტაძარი</figcaption>
-      </figure>
-      <figure>
-        <img src="/img/svetitskhoveli.jpg" width="320" height="220" alt="სვეტიცხოველი" decoding="async">
-        <figcaption>სვეტიცხოველი</figcaption>
-      </figure>
-      <figure>
-        <img src="/img/jvari.jpg" width="320" height="220" alt="ჯვრის მონასტერი" loading="lazy" decoding="async">
-        <figcaption>ჯვრის მონასტერი</figcaption>
-      </figure>
-      <figure>
-        <img src="/img/gelati.jpg" width="320" height="220" alt="გელათის მონასტერი" loading="lazy" decoding="async">
-        <figcaption>გელათის მონასტერი</figcaption>
-      </figure>
+  <div class="divider" aria-hidden="true">✝</div>
+
+  <section class="features" aria-label="რა არის აპლიკაციაში">
+      <div class="f">
+        <div class="fg" aria-hidden="true">✝</div>
+        <div><div class="ft serif">ლოცვანი</div><div class="fd">დილის, საღამოს და სხვა ლოცვები</div></div>
+      </div>
+      <div class="f">
+        <div class="fg" aria-hidden="true">☧</div>
+        <div><div class="ft serif">საეკლესიო კალენდარი</div><div class="fd">მარხვები, დღესასწაულები, პასქალია</div></div>
+      </div>
+      <div class="f">
+        <div class="fg" aria-hidden="true">📖</div>
+        <div><div class="ft serif">სრული ბიბლია</div><div class="fd">ძველი და ახალი აღთქმა ქართულად</div></div>
+      </div>
+      <div class="f">
+        <div class="fg" aria-hidden="true">⛪</div>
+        <div><div class="ft serif">ტაძრები რუკაზე</div><div class="fd">ისტორიული ეკლესიები და მონასტრები</div></div>
+      </div></section>
+
+  <div class="divider" aria-hidden="true">✝</div>
+
+  <section aria-label="ტაძრები">
+    <div class="sect-h">ტაძრები და მონასტრები</div>
+    <div class="grid">
+      <a class="ch" href="/church/sameba/">
+        <img src="/img/sameba.jpg" width="360" height="260" alt="სამების საკათედრო ტაძარი" decoding="async">
+        <span class="cap serif">სამების საკათედრო ტაძარი</span>
+      </a>
+      <a class="ch" href="/church/svetitskhoveli/">
+        <img src="/img/svetitskhoveli.jpg" width="360" height="260" alt="სვეტიცხოველი" decoding="async">
+        <span class="cap serif">სვეტიცხოველი</span>
+      </a>
+      <a class="ch" href="/church/jvari/">
+        <img src="/img/jvari.jpg" width="360" height="260" alt="ჯვრის მონასტერი" loading="lazy" decoding="async">
+        <span class="cap serif">ჯვრის მონასტერი</span>
+      </a>
+      <a class="ch" href="/church/gelati/">
+        <img src="/img/gelati.jpg" width="360" height="260" alt="გელათის მონასტერი" loading="lazy" decoding="async">
+        <span class="cap serif">გელათის მონასტერი</span>
+      </a>
+      <a class="ch" href="/church/david_gareja/">
+        <img src="/img/david_gareja.jpg" width="360" height="260" alt="დავით გარეჯის მონასტერი" loading="lazy" decoding="async">
+        <span class="cap serif">დავით გარეჯის მონასტერი</span>
+      </a>
+      <a class="ch" href="/church/alaverdi/">
+        <img src="/img/alaverdi.jpg" width="360" height="260" alt="ალავერდის ტაძარი" loading="lazy" decoding="async">
+        <span class="cap serif">ალავერდის ტაძარი</span>
+      </a></div>
+    <p class="note">ფოტოები: Wikimedia Commons — CC ლიცენზიით, ავტორების მითითებით.</p>
   </section>
-  <p class="note">ფოტოები: Wikimedia Commons — CC ლიცენზიით, ავტორების მითითებით.</p>
 </main>
 <footer class="site"><div class="wrap">
   <nav>
-    <a href="/privacy">კონფიდენციალურობა</a>
-    <a href="/terms">წესები</a>
-    <a href="/support">დახმარება</a>
+    <a href="/">მთავარი</a><a href="/privacy">კონფიდენციალურობა</a><a href="/terms">წესები</a><a href="/support">დახმარება</a>
   </nav>
-  <div>ლოცვანი — ქართული მართლმადიდებლური ლოცვანი. სრულად ოფლაინ. თრექინგის გარეშე.</div>
+  <div>სრულად ოფლაინ · თრექინგის გარეშე · უფასო</div>
+  <div class="glory serif">✝ ღვთის სადიდებლად</div>
 </div></footer>
 </body>
 </html>
